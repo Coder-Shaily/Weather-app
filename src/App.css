@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+  background: #5c47fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Weather container styling */
+#weather-container {
+  background: rgba(149, 135, 255, 0.7);
+  margin: 2rem;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(138, 140, 255, 0.1);
+  text-align: center;
+}
+
+/* Heading, labels, and paragraph text styling */
+h2, label, p {
+  color: #fff;
+  margin: 8px 0;
+}
+
+/* Input field styling */
+input {
+  width: calc(100% - 20px); /* Consistent spacing with padding */
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Placeholder color for input */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styling */
+button {
+  background: #debff4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1.3rem;
+  width: 6rem;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #8b48d7;
+}
+
+/* Temperature display styling */
+#temp-div p {
+  font-size: 3rem;
+}
+
+/* Weather information text styling */
+#weather-info {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+/* Weather icon styling */
+#weather-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: none;
+}
+
+/* Hourly forecast styling */
+#hourly-forecast {
+  margin-top: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Individual hourly forecast item */
+.hourly-item {
+  flex: 0 0 auto;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* Hourly forecast icon */
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+/* Hourly heading styling */
+#hourly-heading {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
